@@ -1,0 +1,104 @@
+mix compile
+Compiling 1 file (.ex)
+--> Starting Multipaxos at multipaxos_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server1 at server1_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server6 at server6_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server7 at server7_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client2 at client2_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client3 at client3_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_37_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_37_justine@127.0.0.1 (146.169.195.111)
+  Server 6 crashed at time 500
+  Server 1 crashed at time 1000
+  Server 3 crashed at time 1500
+time = 1000 client requests seen = [{1, 596}, {2, 982}, {3, 867}, {4, 861}, {5, 866}, {6, 201}, {7, 990}]
+time = 1000     db requests done = [{1, 758}, {2, 958}, {3, 1149}, {4, 1003}, {5, 1089}, {6, 307}, {7, 1213}]
+time = 1000     total commanders = 6569
+
+  Client 1 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 2 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Server 5 crashed at time 2500
+time = 2000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 2000     db requests done = [{1, 758}, {2, 2100}, {3, 1447}, {4, 2260}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 2000     total commanders = 13044
+
+time = 3000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 3000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 3000     total commanders = 13205
+
+time = 4000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 4000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 4000     total commanders = 13205
+
+time = 5000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 5000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 5000     total commanders = 13205
+
+time = 6000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 6000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 6000     total commanders = 13205
+
+time = 7000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 7000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 7000     total commanders = 13205
+
+time = 8000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 8000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 8000     total commanders = 13205
+
+time = 9000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 9000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 9000     total commanders = 13205
+
+time = 10000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 10000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 10000     total commanders = 13205
+
+time = 11000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 11000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 11000     total commanders = 13205
+
+  Node server1_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_37_justine@127.0.0.1 exiting - maxtime reached
+time = 12000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 12000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 12000     total commanders = 13205
+
+  Node server4_37_justine@127.0.0.1 exiting - maxtime reached
+
+20:59:57.580 [warning] 'global' at node :"server2_37_justine@127.0.0.1" requested disconnect from node :"server1_37_justine@127.0.0.1" in order to prevent overlapping partitions
+
+20:59:57.577 [warning] 'global' at node :"server3_37_justine@127.0.0.1" requested disconnect from node :"server1_37_justine@127.0.0.1" in order to prevent overlapping partitions
+  Node server6_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server8_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_37_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 13000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 13000     total commanders = 13205
+
+  Node client3_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_37_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 14000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 14000     total commanders = 13205
+
+  Node multipaxos_37_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 596}, {2, 1420}, {3, 1162}, {4, 1430}, {5, 1435}, {6, 201}, {7, 1430}]
+time = 15000     db requests done = [{1, 758}, {2, 2317}, {3, 1447}, {4, 2317}, {5, 2024}, {6, 307}, {7, 2317}]
+time = 15000     total commanders = 13205
+

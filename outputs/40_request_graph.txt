@@ -1,0 +1,338 @@
+mix compile
+Compiling 2 files (.ex)
+--> Starting Multipaxos at multipaxos_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server1 at server1_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client2 at client2_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client3 at client3_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_33_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_33_justine@127.0.0.1 (146.169.195.111)
+time = 1000 client requests seen = [{1, 264}, {2, 264}, {3, 268}, {4, 266}, {5, 265}]
+time = 1000     db requests done = [{1, 1327}, {2, 1327}, {3, 1326}, {4, 1327}, {5, 1327}]
+time = 1000     total commanders = 3115
+time = 1000  total requests done = 6634
+
+time = 2000 client requests seen = [{1, 808}, {2, 823}, {3, 819}, {4, 835}, {5, 719}]
+time = 2000     db requests done = [{1, 3662}, {2, 3691}, {3, 3715}, {4, 3775}, {5, 3366}]
+time = 2000     total commanders = 9442
+time = 2000  total requests done = 18209
+
+time = 3000 client requests seen = [{1, 1066}, {2, 1095}, {3, 1081}, {4, 1166}, {5, 1149}]
+time = 3000     db requests done = [{1, 4563}, {2, 4537}, {3, 4755}, {4, 5007}, {5, 4944}]
+time = 3000     total commanders = 11925
+time = 3000  total requests done = 23806
+
+time = 4000 client requests seen = [{1, 1166}, {2, 1260}, {3, 1357}, {4, 1453}, {5, 1398}]
+time = 4000     db requests done = [{1, 5010}, {2, 5264}, {3, 5597}, {4, 5792}, {5, 5715}]
+time = 4000     total commanders = 16309
+time = 4000  total requests done = 27378
+
+time = 5000 client requests seen = [{1, 1347}, {2, 1474}, {3, 1586}, {4, 1793}, {5, 1761}]
+time = 5000     db requests done = [{1, 5575}, {2, 5817}, {3, 6144}, {4, 6659}, {5, 6585}]
+time = 5000     total commanders = 19253
+time = 5000  total requests done = 30780
+
+time = 6000 client requests seen = [{1, 1626}, {2, 1746}, {3, 1851}, {4, 2098}, {5, 2097}]
+time = 6000     db requests done = [{1, 6275}, {2, 6545}, {3, 6786}, {4, 7364}, {5, 7374}]
+time = 6000     total commanders = 20013
+time = 6000  total requests done = 34344
+
+time = 7000 client requests seen = [{1, 1900}, {2, 2069}, {3, 2128}, {4, 2303}, {5, 2287}]
+time = 7000     db requests done = [{1, 6897}, {2, 7291}, {3, 7467}, {4, 8067}, {5, 8020}]
+time = 7000     total commanders = 21069
+time = 7000  total requests done = 37742
+
+time = 8000 client requests seen = [{1, 2129}, {2, 2245}, {3, 2307}, {4, 2609}, {5, 2487}]
+time = 8000     db requests done = [{1, 7477}, {2, 7903}, {3, 8080}, {4, 8681}, {5, 8546}]
+time = 8000     total commanders = 21694
+time = 8000  total requests done = 40687
+
+time = 9000 client requests seen = [{1, 2236}, {2, 2362}, {3, 2430}, {4, 2907}, {5, 2638}]
+time = 9000     db requests done = [{1, 7868}, {2, 8269}, {3, 8438}, {4, 9176}, {5, 8757}]
+time = 9000     total commanders = 31060
+time = 9000  total requests done = 42508
+
+time = 10000 client requests seen = [{1, 2409}, {2, 2672}, {3, 2714}, {4, 3197}, {5, 2962}]
+time = 10000     db requests done = [{1, 8387}, {2, 8862}, {3, 8974}, {4, 9685}, {5, 9171}]
+time = 10000     total commanders = 31879
+time = 10000  total requests done = 45079
+
+time = 11000 client requests seen = [{1, 2688}, {2, 3092}, {3, 3117}, {4, 3450}, {5, 3202}]
+time = 11000     db requests done = [{1, 8903}, {2, 9410}, {3, 9464}, {4, 10261}, {5, 9713}]
+time = 11000     total commanders = 32587
+time = 11000  total requests done = 47751
+
+  Client 2 going to sleep, sent = 4000
+  Client 1 going to sleep, sent = 4000
+  Client 3 going to sleep, sent = 4000
+  Client 4 going to sleep, sent = 4000
+time = 12000 client requests seen = [{1, 3092}, {2, 3272}, {3, 3289}, {4, 3613}, {5, 3449}]
+time = 12000     db requests done = [{1, 9408}, {2, 9887}, {3, 9920}, {4, 10781}, {5, 10261}]
+time = 12000     total commanders = 33305
+time = 12000  total requests done = 50257
+
+  Client 5 going to sleep, sent = 4000
+time = 13000 client requests seen = [{1, 3244}, {2, 3500}, {3, 3504}, {4, 3952}, {5, 3606}]
+time = 13000     db requests done = [{1, 9824}, {2, 10354}, {3, 10351}, {4, 11342}, {5, 10753}]
+time = 13000     total commanders = 34047
+time = 13000  total requests done = 52624
+
+time = 14000 client requests seen = [{1, 3431}, {2, 3634}, {3, 3617}, {4, 4000}, {5, 3930}]
+time = 14000     db requests done = [{1, 10234}, {2, 10817}, {3, 10793}, {4, 11859}, {5, 11241}]
+time = 14000     total commanders = 34623
+time = 14000  total requests done = 54944
+
+time = 15000 client requests seen = [{1, 3572}, {2, 3935}, {3, 3922}, {4, 4000}, {5, 3995}]
+time = 15000     db requests done = [{1, 10642}, {2, 11276}, {3, 11215}, {4, 12353}, {5, 11720}]
+time = 15000     total commanders = 35153
+time = 15000  total requests done = 57206
+
+time = 16000 client requests seen = [{1, 3807}, {2, 3995}, {3, 3988}, {4, 4000}, {5, 4000}]
+time = 16000     db requests done = [{1, 11035}, {2, 11722}, {3, 11641}, {4, 12758}, {5, 12146}]
+time = 16000     total commanders = 35643
+time = 16000  total requests done = 59302
+
+time = 17000 client requests seen = [{1, 3950}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 17000     db requests done = [{1, 11349}, {2, 12062}, {3, 11941}, {4, 13032}, {5, 12414}]
+time = 17000     total commanders = 38179
+time = 17000  total requests done = 60798
+
+time = 18000 client requests seen = [{1, 3982}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 18000     db requests done = [{1, 11585}, {2, 12312}, {3, 12175}, {4, 13263}, {5, 12567}]
+time = 18000     total commanders = 50344
+time = 18000  total requests done = 61902
+
+time = 19000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 19000     db requests done = [{1, 11941}, {2, 12660}, {3, 12472}, {4, 13647}, {5, 12973}]
+time = 19000     total commanders = 50459
+time = 19000  total requests done = 63693
+
+time = 20000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 20000     db requests done = [{1, 12305}, {2, 12984}, {3, 12808}, {4, 14008}, {5, 13313}]
+time = 20000     total commanders = 50784
+time = 20000  total requests done = 65418
+
+time = 21000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 21000     db requests done = [{1, 12848}, {2, 13307}, {3, 13143}, {4, 14381}, {5, 13625}]
+time = 21000     total commanders = 51312
+time = 21000  total requests done = 67304
+
+time = 22000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 22000     db requests done = [{1, 13402}, {2, 13599}, {3, 13453}, {4, 14711}, {5, 13942}]
+time = 22000     total commanders = 51865
+time = 22000  total requests done = 69107
+
+time = 23000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 23000     db requests done = [{1, 13849}, {2, 13879}, {3, 13739}, {4, 15040}, {5, 14288}]
+time = 23000     total commanders = 52244
+time = 23000  total requests done = 70795
+
+time = 24000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 24000     db requests done = [{1, 14292}, {2, 14199}, {3, 14068}, {4, 15367}, {5, 14594}]
+time = 24000     total commanders = 52244
+time = 24000  total requests done = 72520
+
+time = 25000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 25000     db requests done = [{1, 14734}, {2, 14464}, {3, 14370}, {4, 15689}, {5, 14899}]
+time = 25000     total commanders = 52572
+time = 25000  total requests done = 74156
+
+time = 26000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 26000     db requests done = [{1, 15137}, {2, 14729}, {3, 14626}, {4, 15943}, {5, 15189}]
+time = 26000     total commanders = 52757
+time = 26000  total requests done = 75624
+
+time = 27000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 27000     db requests done = [{1, 15374}, {2, 14907}, {3, 14805}, {4, 16121}, {5, 15391}]
+time = 27000     total commanders = 52757
+time = 27000  total requests done = 76598
+
+time = 28000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 28000     db requests done = [{1, 15639}, {2, 15092}, {3, 15000}, {4, 16313}, {5, 15632}]
+time = 28000     total commanders = 52757
+time = 28000  total requests done = 77676
+
+time = 29000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 29000     db requests done = [{1, 15911}, {2, 15314}, {3, 15238}, {4, 16486}, {5, 15884}]
+time = 29000     total commanders = 52758
+time = 29000  total requests done = 78833
+
+time = 30000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 30000     db requests done = [{1, 16163}, {2, 15527}, {3, 15446}, {4, 16656}, {5, 16130}]
+time = 30000     total commanders = 52928
+time = 30000  total requests done = 79922
+
+time = 31000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 31000     db requests done = [{1, 16437}, {2, 15865}, {3, 15672}, {4, 16862}, {5, 16378}]
+time = 31000     total commanders = 53225
+time = 31000  total requests done = 81214
+
+time = 32000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 32000     db requests done = [{1, 16700}, {2, 16246}, {3, 15906}, {4, 17069}, {5, 16652}]
+time = 32000     total commanders = 53605
+time = 32000  total requests done = 82573
+
+time = 33000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 33000     db requests done = [{1, 17000}, {2, 16649}, {3, 16165}, {4, 17288}, {5, 16923}]
+time = 33000     total commanders = 54009
+time = 33000  total requests done = 84025
+
+time = 34000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 34000     db requests done = [{1, 17171}, {2, 16899}, {3, 16307}, {4, 17418}, {5, 17069}]
+time = 34000     total commanders = 62265
+time = 34000  total requests done = 84864
+
+time = 35000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 35000     db requests done = [{1, 17292}, {2, 17037}, {3, 16491}, {4, 17510}, {5, 17101}]
+time = 35000     total commanders = 72611
+time = 35000  total requests done = 85431
+
+time = 36000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 36000     db requests done = [{1, 17624}, {2, 17440}, {3, 17037}, {4, 17778}, {5, 17365}]
+time = 36000     total commanders = 72617
+time = 36000  total requests done = 87244
+
+time = 37000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 37000     db requests done = [{1, 17977}, {2, 17861}, {3, 17551}, {4, 18031}, {5, 17628}]
+time = 37000     total commanders = 72617
+time = 37000  total requests done = 89048
+
+time = 38000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 38000     db requests done = [{1, 18321}, {2, 18257}, {3, 18031}, {4, 18273}, {5, 17883}]
+time = 38000     total commanders = 73002
+time = 38000  total requests done = 90765
+
+time = 39000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 39000     db requests done = [{1, 18648}, {2, 18607}, {3, 18455}, {4, 18513}, {5, 18126}]
+time = 39000     total commanders = 73426
+time = 39000  total requests done = 92349
+
+time = 40000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 40000     db requests done = [{1, 18840}, {2, 18931}, {3, 18764}, {4, 18819}, {5, 18419}]
+time = 40000     total commanders = 73431
+time = 40000  total requests done = 93773
+
+time = 41000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 41000     db requests done = [{1, 19046}, {2, 19157}, {3, 19020}, {4, 19088}, {5, 18696}]
+time = 41000     total commanders = 73479
+time = 41000  total requests done = 95007
+
+time = 42000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 42000     db requests done = [{1, 19332}, {2, 19481}, {3, 19357}, {4, 19305}, {5, 18907}]
+time = 42000     total commanders = 73690
+time = 42000  total requests done = 96382
+
+time = 43000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 43000     db requests done = [{1, 19589}, {2, 19735}, {3, 19647}, {4, 19515}, {5, 19118}]
+time = 43000     total commanders = 73900
+time = 43000  total requests done = 97604
+
+time = 44000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 44000     db requests done = [{1, 19876}, {2, 19900}, {3, 19900}, {4, 19765}, {5, 19344}]
+time = 44000     total commanders = 74057
+time = 44000  total requests done = 98785
+
+time = 45000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 45000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 19539}]
+time = 45000     total commanders = 74157
+time = 45000  total requests done = 99539
+
+time = 46000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 46000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 19903}]
+time = 46000     total commanders = 74157
+time = 46000  total requests done = 99903
+
+time = 47000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 47000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 47000     total commanders = 74157
+time = 47000  total requests done = 100000
+
+time = 48000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 48000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 48000     total commanders = 74157
+time = 48000  total requests done = 100000
+
+time = 49000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 49000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 49000     total commanders = 74157
+time = 49000  total requests done = 100000
+
+time = 50000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 50000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 50000     total commanders = 74157
+time = 50000  total requests done = 100000
+
+time = 51000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 51000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 51000     total commanders = 74157
+time = 51000  total requests done = 100000
+
+time = 52000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 52000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 52000     total commanders = 74157
+time = 52000  total requests done = 100000
+
+time = 53000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 53000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 53000     total commanders = 74157
+time = 53000  total requests done = 100000
+
+time = 54000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 54000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 54000     total commanders = 74157
+time = 54000  total requests done = 100000
+
+time = 55000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 55000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 55000     total commanders = 74157
+time = 55000  total requests done = 100000
+
+time = 56000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 56000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 56000     total commanders = 74157
+time = 56000  total requests done = 100000
+
+  Node server1_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_33_justine@127.0.0.1 exiting - maxtime reached
+time = 57000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 57000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 57000     total commanders = 74157
+time = 57000  total requests done = 100000
+
+  Node client2_33_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_33_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_33_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_33_justine@127.0.0.1 exiting - maxtime reached
+time = 58000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 58000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 58000     total commanders = 74157
+time = 58000  total requests done = 100000
+
+
+11:15:39.573 [warning] 'global' at node :"multipaxos_33_justine@127.0.0.1" requested disconnect from node :"client2_33_justine@127.0.0.1" in order to prevent overlapping partitions
+  Node server5_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server8_33_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_33_justine@127.0.0.1 exiting - maxtime reached
+
+11:15:40.168 [warning] 'global' at node :"multipaxos_33_justine@127.0.0.1" requested disconnect from node :"server4_33_justine@127.0.0.1" in order to prevent overlapping partitions
+  Node server2_33_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_33_justine@127.0.0.1 exiting - maxtime reached
+time = 59000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 59000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 59000     total commanders = 74157
+time = 59000  total requests done = 100000
+
+  Node multipaxos_33_justine@127.0.0.1 exiting - maxtime reached
+time = 60000 client requests seen = [{1, 4000}, {2, 4000}, {3, 4000}, {4, 4000}, {5, 4000}]
+time = 60000     db requests done = [{1, 20000}, {2, 20000}, {3, 20000}, {4, 20000}, {5, 20000}]
+time = 60000     total commanders = 74157
+time = 60000  total requests done = 100000
+

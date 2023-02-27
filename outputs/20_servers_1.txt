@@ -1,0 +1,350 @@
+mix compile
+--> Starting Multipaxos at multipaxos_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Server1 at server1_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client1 at client1_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client2 at client2_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client3 at client3_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client4 at client4_50_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client5 at client5_50_justine@127.0.0.1 (146.169.206.32)
+time = 500 client requests seen = [{1, 726}]
+time = 500     db requests done = [{1, 726}]
+time = 500     total commanders = 726
+
+time = 1000 client requests seen = [{1, 1566}]
+time = 1000     db requests done = [{1, 1565}]
+time = 1000     total commanders = 1566
+
+time = 1500 client requests seen = [{1, 2401}]
+time = 1500     db requests done = [{1, 2399}]
+time = 1500     total commanders = 2401
+
+  Client 1 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+  Client 2 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 2500}]
+time = 2000     db requests done = [{1, 2500}]
+time = 2000     total commanders = 2500
+
+time = 2500 client requests seen = [{1, 2500}]
+time = 2500     db requests done = [{1, 2500}]
+time = 2500     total commanders = 2500
+
+  Node server1_50_justine@127.0.0.1 exiting - maxtime reached
+time = 3000 client requests seen = [{1, 2500}]
+time = 3000     db requests done = [{1, 2500}]
+time = 3000     total commanders = 2500
+
+  Node server2_50_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_50_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_50_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_50_justine@127.0.0.1 exiting - maxtime reached
+time = 3500 client requests seen = [{1, 2500}]
+time = 3500     db requests done = [{1, 2500}]
+time = 3500     total commanders = 2500
+
+  Node client4_50_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_50_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_50_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_50_justine@127.0.0.1 exiting - maxtime reached
+time = 4000 client requests seen = [{1, 2500}]
+time = 4000     db requests done = [{1, 2500}]
+time = 4000     total commanders = 2500
+
+  Node client3_50_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_50_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_50_justine@127.0.0.1 exiting - maxtime reached
+time = 4500 client requests seen = [{1, 2500}]
+time = 4500     db requests done = [{1, 2500}]
+time = 4500     total commanders = 2500
+
+  Node multipaxos_50_justine@127.0.0.1 exiting - maxtime reached
+time = 5000 client requests seen = [{1, 2500}]
+time = 5000     db requests done = [{1, 2500}]
+time = 5000     total commanders = 2500
+
+time = 5500 client requests seen = [{1, 2500}]
+time = 5500     db requests done = [{1, 2500}]
+time = 5500     total commanders = 2500
+
+mix compile
+--> Starting Multipaxos at multipaxos_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Server1 at server1_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client1 at client1_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client2 at client2_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client3 at client3_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client4 at client4_02_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client5 at client5_02_justine@127.0.0.1 (146.169.206.32)
+time = 500 client requests seen = [{1, 725}]
+time = 500     db requests done = [{1, 725}]
+time = 500     total commanders = 725
+
+time = 1000 client requests seen = [{1, 1565}]
+time = 1000     db requests done = [{1, 1565}]
+time = 1000     total commanders = 1565
+
+time = 1500 client requests seen = [{1, 2400}]
+time = 1500     db requests done = [{1, 2399}]
+time = 1500     total commanders = 2400
+
+  Client 2 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 2500}]
+time = 2000     db requests done = [{1, 2500}]
+time = 2000     total commanders = 2500
+
+time = 2500 client requests seen = [{1, 2500}]
+time = 2500     db requests done = [{1, 2500}]
+time = 2500     total commanders = 2500
+
+  Node server3_02_justine@127.0.0.1 exiting - maxtime reached
+time = 3000 client requests seen = [{1, 2500}]
+time = 3000     db requests done = [{1, 2500}]
+time = 3000     total commanders = 2500
+
+  Node server4_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_02_justine@127.0.0.1 exiting - maxtime reached
+time = 3500 client requests seen = [{1, 2500}]
+time = 3500     db requests done = [{1, 2500}]
+time = 3500     total commanders = 2500
+
+  Node server5_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server1_02_justine@127.0.0.1 exiting - maxtime reached
+time = 4000 client requests seen = [{1, 2500}]
+time = 4000     db requests done = [{1, 2500}]
+time = 4000     total commanders = 2500
+
+  Node server7_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_02_justine@127.0.0.1 exiting - maxtime reached
+time = 4500 client requests seen = [{1, 2500}]
+time = 4500     db requests done = [{1, 2500}]
+time = 4500     total commanders = 2500
+
+  Node multipaxos_02_justine@127.0.0.1 exiting - maxtime reached
+time = 5000 client requests seen = [{1, 2500}]
+time = 5000     db requests done = [{1, 2500}]
+time = 5000     total commanders = 2500
+
+time = 5500 client requests seen = [{1, 2500}]
+time = 5500     db requests done = [{1, 2500}]
+time = 5500     total commanders = 2500
+
+mix compile
+--> Starting Multipaxos at multipaxos_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Server1 at server1_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client1 at client1_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client2 at client2_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client3 at client3_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client4 at client4_13_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client5 at client5_13_justine@127.0.0.1 (146.169.206.32)
+time = 500 client requests seen = [{1, 731}]
+time = 500     db requests done = [{1, 730}]
+time = 500     total commanders = 731
+
+time = 1000 client requests seen = [{1, 1571}]
+time = 1000     db requests done = [{1, 1570}]
+time = 1000     total commanders = 1571
+
+time = 1500 client requests seen = [{1, 2406}]
+time = 1500     db requests done = [{1, 2405}]
+time = 1500     total commanders = 2406
+
+  Client 1 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+  Client 2 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 2500}]
+time = 2000     db requests done = [{1, 2500}]
+time = 2000     total commanders = 2500
+
+time = 2500 client requests seen = [{1, 2500}]
+time = 2500     db requests done = [{1, 2500}]
+time = 2500     total commanders = 2500
+
+time = 3000 client requests seen = [{1, 2500}]
+time = 3000     db requests done = [{1, 2500}]
+time = 3000     total commanders = 2500
+
+  Node server1_13_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_13_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_13_justine@127.0.0.1 exiting - maxtime reached
+time = 3500 client requests seen = [{1, 2500}]
+time = 3500     db requests done = [{1, 2500}]
+time = 3500     total commanders = 2500
+
+  Node server4_13_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_13_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_13_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_13_justine@127.0.0.1 exiting - maxtime reached
+time = 4000 client requests seen = [{1, 2500}]
+time = 4000     db requests done = [{1, 2500}]
+time = 4000     total commanders = 2500
+
+  Node client4_13_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_13_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_13_justine@127.0.0.1 exiting - maxtime reached
+time = 4500 client requests seen = [{1, 2500}]
+time = 4500     db requests done = [{1, 2500}]
+time = 4500     total commanders = 2500
+
+  Node client3_13_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_13_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_13_justine@127.0.0.1 exiting - maxtime reached
+time = 5000 client requests seen = [{1, 2500}]
+time = 5000     db requests done = [{1, 2500}]
+time = 5000     total commanders = 2500
+
+time = 5500 client requests seen = [{1, 2500}]
+time = 5500     db requests done = [{1, 2500}]
+time = 5500     total commanders = 2500
+
+mix compile
+--> Starting Multipaxos at multipaxos_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Server1 at server1_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client1 at client1_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client2 at client2_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client3 at client3_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client4 at client4_25_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client5 at client5_25_justine@127.0.0.1 (146.169.206.32)
+time = 500 client requests seen = [{1, 712}]
+time = 500     db requests done = [{1, 712}]
+time = 500     total commanders = 712
+
+time = 1000 client requests seen = [{1, 1553}]
+time = 1000     db requests done = [{1, 1552}]
+time = 1000     total commanders = 1553
+
+time = 1500 client requests seen = [{1, 2388}]
+time = 1500     db requests done = [{1, 2387}]
+time = 1500     total commanders = 2388
+
+  Client 3 going to sleep, sent = 500
+  Client 2 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 2500}]
+time = 2000     db requests done = [{1, 2500}]
+time = 2000     total commanders = 2500
+
+time = 2500 client requests seen = [{1, 2500}]
+time = 2500     db requests done = [{1, 2500}]
+time = 2500     total commanders = 2500
+
+  Node server1_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_25_justine@127.0.0.1 exiting - maxtime reached
+time = 3000 client requests seen = [{1, 2500}]
+time = 3000     db requests done = [{1, 2500}]
+time = 3000     total commanders = 2500
+
+  Node server4_25_justine@127.0.0.1 exiting - maxtime reached
+time = 3500 client requests seen = [{1, 2500}]
+time = 3500     db requests done = [{1, 2500}]
+time = 3500     total commanders = 2500
+
+  Node server7_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_25_justine@127.0.0.1 exiting - maxtime reached
+time = 4000 client requests seen = [{1, 2500}]
+time = 4000     db requests done = [{1, 2500}]
+time = 4000     total commanders = 2500
+
+  Node client5_25_justine@127.0.0.1 exiting - maxtime reached
+time = 4500 client requests seen = [{1, 2500}]
+time = 4500     db requests done = [{1, 2500}]
+time = 4500     total commanders = 2500
+
+  Node client3_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_25_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_25_justine@127.0.0.1 exiting - maxtime reached
+time = 5000 client requests seen = [{1, 2500}]
+time = 5000     db requests done = [{1, 2500}]
+time = 5000     total commanders = 2500
+
+time = 5500 client requests seen = [{1, 2500}]
+time = 5500     db requests done = [{1, 2500}]
+time = 5500     total commanders = 2500
+
+mix compile
+--> Starting Multipaxos at multipaxos_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Server1 at server1_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client1 at client1_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client2 at client2_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client3 at client3_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client4 at client4_37_justine@127.0.0.1 (146.169.206.32)
+--> Starting Client5 at client5_37_justine@127.0.0.1 (146.169.206.32)
+time = 500 client requests seen = [{1, 732}]
+time = 500     db requests done = [{1, 731}]
+time = 500     total commanders = 731
+
+time = 1000 client requests seen = [{1, 1575}]
+time = 1000     db requests done = [{1, 1575}]
+time = 1000     total commanders = 1575
+
+time = 1500 client requests seen = [{1, 2410}]
+time = 1500     db requests done = [{1, 2410}]
+time = 1500     total commanders = 2410
+
+  Client 2 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 2500}]
+time = 2000     db requests done = [{1, 2500}]
+time = 2000     total commanders = 2500
+
+time = 2500 client requests seen = [{1, 2500}]
+time = 2500     db requests done = [{1, 2500}]
+time = 2500     total commanders = 2500
+
+  Node server1_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_37_justine@127.0.0.1 exiting - maxtime reached
+time = 3000 client requests seen = [{1, 2500}]
+time = 3000     db requests done = [{1, 2500}]
+time = 3000     total commanders = 2500
+
+  Node server3_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_37_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_37_justine@127.0.0.1 exiting - maxtime reached
+time = 3500 client requests seen = [{1, 2500}]
+time = 3500     db requests done = [{1, 2500}]
+time = 3500     total commanders = 2500
+
+  Node server6_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_37_justine@127.0.0.1 exiting - maxtime reached
+time = 4000 client requests seen = [{1, 2500}]
+time = 4000     db requests done = [{1, 2500}]
+time = 4000     total commanders = 2500
+
+  Node client4_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_37_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_37_justine@127.0.0.1 exiting - maxtime reached
+time = 4500 client requests seen = [{1, 2500}]
+time = 4500     db requests done = [{1, 2500}]
+time = 4500     total commanders = 2500
+
+  Node multipaxos_37_justine@127.0.0.1 exiting - maxtime reached
+time = 5000 client requests seen = [{1, 2500}]
+time = 5000     db requests done = [{1, 2500}]
+time = 5000     total commanders = 2500
+
+time = 5500 client requests seen = [{1, 2500}]
+time = 5500     db requests done = [{1, 2500}]
+time = 5500     total commanders = 2500
+

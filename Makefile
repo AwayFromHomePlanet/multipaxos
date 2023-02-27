@@ -3,7 +3,7 @@
 # coursework, paxos made moderately complex
 # Makefile
 
-SERVERS  = 7
+SERVERS  = 5
 CLIENTS  = 5
 PARAMS   = default
 DEBUG    = 0
@@ -34,6 +34,9 @@ run cluster: compile
 	@ ${ELIXIR} server5_${NODE_SUFFIX} ${MIX} cluster_wait &
 	@ ${ELIXIR} server6_${NODE_SUFFIX} ${MIX} cluster_wait &
 	@ ${ELIXIR} server7_${NODE_SUFFIX} ${MIX} cluster_wait &
+	@ ${ELIXIR} server8_${NODE_SUFFIX} ${MIX} cluster_wait &
+	@ ${ELIXIR} server9_${NODE_SUFFIX} ${MIX} cluster_wait &
+	@ ${ELIXIR} server10_${NODE_SUFFIX} ${MIX} cluster_wait &
 
 	@ ${ELIXIR} client1_${NODE_SUFFIX} ${MIX} cluster_wait &
 	@ ${ELIXIR} client2_${NODE_SUFFIX} ${MIX} cluster_wait &
@@ -53,6 +56,3 @@ clean:
 ps:
 	@echo ------------------------------------------------------------
 	epmd -names
-
-
-

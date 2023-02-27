@@ -13,17 +13,18 @@ defmodule Scout do
       { :P1B, a_ballot, a_pvalues } ->
         if a_ballot == ballot do
           Debug.info(config, "received p1b for #{inspect(ballot)}, awaiting #{awaiting} more", 3)
-          # add acceptor's pvalues to mine, choosing the largest ballot number for each slot
+          # Add acceptor's pvalues to mine, only keeping the largest ballot number for each slot
+          # pvalues: %{slot => {ballot, cmd}}
           pvalues = Map.merge(pvalues, a_pvalues, 
                               fn _s, {b1, c1}, {b2, c2} -> 
                                 if b1 > b2 do {b1, c1} else {b2, c2} end 
                               end)
-          if awaiting == 0 do
+          if awaiting == 0 do    # Received promises from a majority of acceptors
             send leader, { :ADOPTED, ballot, pvalues }
             finish(config)
           end
           next(config, leader, ballot, awaiting - 1, pvalues)
-        else
+        else    # Acceptor's ballot number is higher than mine, no more progress can be made
           send leader, { :PREEMPTED, a_ballot }
           finish(config)
         end

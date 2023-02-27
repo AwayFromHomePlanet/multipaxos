@@ -102,6 +102,10 @@ def next(self) do
     IO.puts "time = #{clock} client requests seen = #{inspect sorted}"
     sorted = self.done |> Map.to_list |> List.keysort(0)
     IO.puts "time = #{clock}     db requests done = #{inspect sorted}"
+    total = Enum.sum(Map.values(self.commanders_spawned))
+    IO.puts "time = #{clock}     total commanders = #{total}"
+    # total = Enum.sum(Map.values(self.done))
+    # IO.puts "time = #{clock}  total requests done = #{total}"
 
     if self.config.debug_level > 0 do
       sorted = self.scouts_spawned  |> Map.to_list |> List.keysort(0)
@@ -113,8 +117,6 @@ def next(self) do
       IO.puts "time = #{clock}        commanders up = #{inspect sorted}"
       sorted = self.commanders_finished |> Map.to_list |> List.keysort(0)
       IO.puts "time = #{clock}      commanders down = #{inspect sorted}"
-      total = Enum.sum(Map.values(self.commanders_spawned))
-      IO.puts "time = #{clock}     total commanders = #{total}"
     end # if
 
     IO.puts ""

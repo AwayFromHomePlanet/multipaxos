@@ -15,8 +15,9 @@ def node_init do
     start_function: :'#{Enum.at(System.argv, 6)}',
   }
 
+  config = Map.merge(config, Configuration.params(config.param_setup))
   spawn(Helper, :node_exit_after, [config.timelimit])
-  config |> Map.merge(Configuration.params(config.param_setup))
+  config
 end # node_init
 
 def node_info(config, node_type, node_num \\ "") do
@@ -42,7 +43,7 @@ def params(:default) do
   n_accounts:    10,            # number of active bank accounts (init balance=0)
   max_amount:    1_000,         # max amount moved between accounts
 
-  print_after:   1_000,         # print summary every print_after msecs (monitor)
+  print_after:   2_000,         # print summary every print_after msecs (monitor)
 
   window_size:   10,            # multi-paxos window size
   
@@ -50,8 +51,12 @@ def params(:default) do
   },
 
   init_timeout:  10,            # initial wait time (ms) after being preempted before trying again
-  timeout_mult:  2,           # multiplier applied to timeout after each preempt
-  timeout_decr:  2              # amount timeout is decreased after each successful proposal
+  timeout_mult:  2,             # multiplier applied to timeout after each preempt
+  timeout_decr:  2,             # amount timeout is decreased after each successful proposal
+  max_timeout:   :infinity,     # maximum time a leader can sleep
+  timeout_on:    true,          # toggles whether leaders sleep, switching to false could result in livelock
+
+  optimise:      true           # true prevents leaders spawning commanders for decided slots
 
   # redact: performance/liveness/distribution parameters
   }
@@ -66,65 +71,99 @@ def params(:small) do
   }
 end
 
-def params(:quorum) do
+def params(:large) do         
   Map.merge (params :default),
   %{
-  send_policy: :quorum
-  }
-end
-
-def params(:broadcast) do
-  Map.merge (params :default),
-  %{
-  send_policy: :broadcast
-  }
-end
-
-def params(:qs) do
-  Map.merge (params :small),
-  %{
-  send_policy: :quorum
+    max_requests: 10000,
+    timelimit: 100000,
+    print_after: 2000
   }
 end
 
 def params(:crash3) do
   Map.merge (params :default),
   %{
-  # max_requests: 100,
+  n_servers: 7,
   crash_servers: %{            # %{ server_num => crash_after_time, ...}
     3 => 1_500,
     5 => 2_500,
-    6 => 5_000
+    6 => 500
     },
   }
 end
 
-def params(:qc) do
-  Map.merge (params :crash3),
-  %{
-  send_policy: :quorum
-  }
-end
-
-def params(:lqc) do
-  Map.merge (params :qc),
-  %{
-    max_requests: 3000,
-    timelimit: 60000,
-    client_stop: 60000
-  }
-end
-
-def params(:large) do         
+def params(:crash_majority_quorum) do
   Map.merge (params :default),
   %{
-    max_requests: 2000,
-    timelimit: 60000,
-    client_stop: 60000
+  send_policy: :quorum,
+  n_servers: 7,
+  crash_servers: %{
+    1 => 1_000,
+    3 => 1_500,
+    5 => 2_500,
+    6 => 500
+    },
   }
 end
 
-# redact params functions...
+
+def params(:quorum) do 
+  Map.merge(params(:default), %{ send_policy: :quorum })
+end
+def params(:quorum_crash) do
+  Map.merge(params(:crash3), %{ send_policy: :quorum })
+end
+def params(:broadcast) do 
+  Map.merge(params(:default), %{ send_policy: :broadcast })
+end
+def params(:broadcast_crash) do
+  Map.merge(params(:crash3), %{ send_policy: :broadcast })
+end
+
+
+def params(:request_1000) do 
+  Map.merge(params(:default), %{ max_requests: 1000, timelimit: 10000 })
+end
+def params(:request_1500) do 
+  Map.merge(params(:default), %{ max_requests: 1500, timelimit: 15000 })
+end
+def params(:request_2000) do 
+  Map.merge(params(:default), %{ max_requests: 2000, timelimit: 20000 })
+end
+def params(:request_2500) do 
+  Map.merge(params(:default), %{ max_requests: 2500, timelimit: 30000 })
+end
+def params(:request_3000) do 
+  Map.merge(params(:default), %{ max_requests: 3000, timelimit: 40000 })
+end
+def params(:request_3500) do 
+  Map.merge(params(:default), %{ max_requests: 3500, timelimit: 50000 })
+end
+def params(:request_4000) do 
+  Map.merge(params(:default), %{ max_requests: 4000, timelimit: 60000 })
+end
+
+
+def params(:mult15) do
+  Map.merge(params(:default), %{ timeout_mult: 1.5 })
+end
+def params(:mult12) do
+  Map.merge(params(:default), %{ timeout_mult: 1.2 })
+end
+def params(:mult11) do
+  Map.merge(params(:default), %{ timeout_mult: 1.1 })
+end
+def params(:mult1) do
+  Map.merge(params(:default), %{ timeout_mult: 1 })
+end
+def params(:no_timeout) do
+  Map.merge(params(:default), %{ timeout_on: false })
+end
+
+
+def params(:no_opt) do
+  Map.merge(params(:default), %{ optimise: false })
+end
 
 end # Configuration ----------------------------------------------------------------
 

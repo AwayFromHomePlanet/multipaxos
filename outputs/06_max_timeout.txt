@@ -1,0 +1,1267 @@
+mix compile
+--> Starting Multipaxos at multipaxos_17_justine@127.0.0.1 (146.169.195.111)
+  client_sleep 2
+  client_stop 15000
+  crash_servers %{}
+  debug_level 2
+  init_timeout 10
+  line_num 0
+  max_amount 1000
+  max_requests 500
+  max_timeout 1000
+  monitor #PID<0.145.0>
+  n_accounts 10
+  n_clients 5
+  n_servers 5
+  node_location "multipaxos_17_justine@127.0.0.1 (146.169.195.111)"
+  node_name "Multipaxos"
+  node_num ""
+  node_suffix "17_justine@127.0.0.1"
+  node_type "Multipaxos"
+  param_setup :default
+  print_after 1000
+  send_policy :round_robin
+  start_function :cluster_start
+  timelimit 15000
+  timeout_decr 2
+  timeout_mult 2
+  window_size 10
+--> Starting Server1 at server1_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_17_justine@127.0.0.1 (146.169.195.111)
+[34m--> Debug Server3: preempted by {0, 4}, my ballot: {0, 3}, timeout: 10
+[31m--> Debug Server1: preempted by {0, 3}, my ballot: {0, 1}, timeout: 10
+[32m--> Debug Server2: preempted by {0, 4}, my ballot: {0, 2}, timeout: 10
+--> Starting Client2 at client2_17_justine@127.0.0.1 (146.169.195.111)
+[31m--> Debug Server1: preempted by {1, 3}, my ballot: {1, 1}, timeout: 22
+[35m--> Debug Server5: preempted by {1, 3}, my ballot: {0, 5}, timeout: 10
+[32m--> Debug Server2: preempted by {1, 3}, my ballot: {1, 2}, timeout: 22
+--> Starting Client3 at client3_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_17_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_17_justine@127.0.0.1 (146.169.195.111)
+[36m--> Debug Server4: preempted by {2, 5}, my ballot: {0, 4}, timeout: 10
+[32m--> Debug Server2: preempted by {2, 5}, my ballot: {2, 2}, timeout: 46
+[34m--> Debug Server3: preempted by {2, 5}, my ballot: {1, 3}, timeout: 22
+[31m--> Debug Server1: preempted by {2, 5}, my ballot: {2, 1}, timeout: 46
+[35m--> Debug Server5: preempted by {3, 4}, my ballot: {2, 5}, timeout: 10
+[36m--> Debug Server4: preempted by {4, 5}, my ballot: {3, 4}, timeout: 0
+[34m--> Debug Server3: preempted by {5, 4}, my ballot: {3, 3}, timeout: 46
+[35m--> Debug Server5: preempted by {5, 4}, my ballot: {4, 5}, timeout: 22
+[32m--> Debug Server2: preempted by {5, 4}, my ballot: {3, 2}, timeout: 94
+[31m--> Debug Server1: preempted by {5, 4}, my ballot: {3, 1}, timeout: 94
+[36m--> Debug Server4: preempted by {6, 5}, my ballot: {5, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {7, 4}, my ballot: {6, 5}, timeout: 46
+[34m--> Debug Server3: preempted by {7, 4}, my ballot: {6, 3}, timeout: 94
+[36m--> Debug Server4: preempted by {8, 5}, my ballot: {7, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {9, 4}, my ballot: {8, 5}, timeout: 50
+[32m--> Debug Server2: preempted by {9, 4}, my ballot: {6, 2}, timeout: 190
+[31m--> Debug Server1: preempted by {9, 4}, my ballot: {6, 1}, timeout: 190
+[36m--> Debug Server4: preempted by {10, 5}, my ballot: {9, 4}, timeout: 0
+[34m--> Debug Server3: preempted by {11, 4}, my ballot: {8, 3}, timeout: 190
+[35m--> Debug Server5: preempted by {11, 4}, my ballot: {10, 5}, timeout: 102
+[36m--> Debug Server4: preempted by {12, 5}, my ballot: {11, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {13, 4}, my ballot: {12, 5}, timeout: 206
+[32m--> Debug Server2: preempted by {13, 4}, my ballot: {10, 2}, timeout: 382
+[31m--> Debug Server1: preempted by {13, 4}, my ballot: {10, 1}, timeout: 382
+[34m--> Debug Server3: preempted by {13, 4}, my ballot: {12, 3}, timeout: 382
+[36m--> Debug Server4: preempted by {14, 5}, my ballot: {13, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {15, 4}, my ballot: {14, 5}, timeout: 414
+[31m--> Debug Server1: preempted by {15, 4}, my ballot: {14, 1}, timeout: 766
+time = 1000 client requests seen = [{1, 243}, {2, 240}, {3, 245}, {4, 244}, {5, 244}]
+time = 1000     db requests done = [{1, 1216}, {2, 1216}, {3, 1216}, {4, 1216}, {5, 1216}]
+time = 1000     total commanders = 2731
+time = 1000            scouts up = [{1, 7}, {2, 6}, {3, 6}, {4, 8}, {5, 8}]
+time = 1000          scouts down = [{1, 7}, {2, 6}, {3, 6}, {4, 8}, {5, 8}]
+time = 1000        commanders up = [{1, 6}, {2, 6}, {3, 6}, {4, 1228}, {5, 1485}]
+time = 1000      commanders down = [{1, 6}, {2, 6}, {3, 6}, {4, 1228}, {5, 1485}]
+
+[34m--> Debug Server3: preempted by {15, 4}, my ballot: {14, 3}, timeout: 766
+[32m--> Debug Server2: preempted by {15, 4}, my ballot: {14, 2}, timeout: 766
+[36m--> Debug Server4: preempted by {16, 5}, my ballot: {15, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {17, 4}, my ballot: {16, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {18, 5}, my ballot: {17, 4}, timeout: 2
+[35m--> Debug Server5: preempted by {19, 4}, my ballot: {18, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {20, 5}, my ballot: {19, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {21, 4}, my ballot: {20, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {22, 5}, my ballot: {21, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {23, 4}, my ballot: {22, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {24, 5}, my ballot: {23, 4}, timeout: 2
+[35m--> Debug Server5: preempted by {25, 4}, my ballot: {24, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {26, 5}, my ballot: {25, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {27, 4}, my ballot: {26, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {28, 5}, my ballot: {27, 4}, timeout: 2
+[35m--> Debug Server5: preempted by {29, 4}, my ballot: {28, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {30, 5}, my ballot: {29, 4}, timeout: 6
+[35m--> Debug Server5: preempted by {31, 4}, my ballot: {30, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {32, 5}, my ballot: {31, 4}, timeout: 14
+[31m--> Debug Server1: preempted by {32, 5}, my ballot: {16, 1}, timeout: 1000
+  Client 3 going to sleep, sent = 500
+[35m--> Debug Server5: preempted by {33, 4}, my ballot: {32, 5}, timeout: 0
+  Client 5 going to sleep, sent = 500
+  Client 2 going to sleep, sent = 500
+[36m--> Debug Server4: preempted by {34, 5}, my ballot: {33, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {35, 4}, my ballot: {34, 5}, timeout: 0
+[32m--> Debug Server2: preempted by {35, 4}, my ballot: {16, 2}, timeout: 1000
+[36m--> Debug Server4: preempted by {36, 5}, my ballot: {35, 4}, timeout: 0
+[34m--> Debug Server3: preempted by {35, 4}, my ballot: {16, 3}, timeout: 1000
+  Client 1 going to sleep, sent = 500
+[35m--> Debug Server5: preempted by {37, 4}, my ballot: {36, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {38, 5}, my ballot: {37, 4}, timeout: 2
+[35m--> Debug Server5: preempted by {39, 4}, my ballot: {38, 5}, timeout: 6
+[36m--> Debug Server4: preempted by {40, 5}, my ballot: {39, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {41, 4}, my ballot: {40, 5}, timeout: 14
+  Client 4 going to sleep, sent = 500
+[36m--> Debug Server4: preempted by {42, 5}, my ballot: {41, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {43, 4}, my ballot: {42, 5}, timeout: 30
+[36m--> Debug Server4: preempted by {44, 5}, my ballot: {43, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {45, 4}, my ballot: {44, 5}, timeout: 62
+time = 2000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 2000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 2000     total commanders = 8556
+time = 2000            scouts up = [{1, 8}, {2, 8}, {3, 8}, {4, 23}, {5, 23}]
+time = 2000          scouts down = [{1, 8}, {2, 8}, {3, 8}, {4, 23}, {5, 23}]
+time = 2000        commanders up = [{1, 6}, {2, 6}, {3, 6}, {4, 3191}, {5, 5347}]
+time = 2000      commanders down = [{1, 6}, {2, 6}, {3, 6}, {4, 3191}, {5, 5347}]
+
+[31m--> Debug Server1: preempted by {46, 5}, my ballot: {33, 1}, timeout: 1000
+[34m--> Debug Server3: preempted by {46, 5}, my ballot: {36, 3}, timeout: 1000
+[32m--> Debug Server2: preempted by {46, 5}, my ballot: {36, 2}, timeout: 1000
+time = 3000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 3000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 3000     total commanders = 8848
+time = 3000            scouts up = [{1, 9}, {2, 9}, {3, 9}, {4, 23}, {5, 24}]
+time = 3000          scouts down = [{1, 9}, {2, 9}, {3, 9}, {4, 23}, {5, 24}]
+time = 3000        commanders up = [{1, 6}, {2, 6}, {3, 6}, {4, 3191}, {5, 5639}]
+time = 3000      commanders down = [{1, 6}, {2, 6}, {3, 6}, {4, 3191}, {5, 5639}]
+
+[32m--> Debug Server2: preempted by {47, 3}, my ballot: {47, 2}, timeout: 1000
+time = 4000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 4000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 4000     total commanders = 13848
+time = 4000            scouts up = [{1, 10}, {2, 10}, {3, 10}, {4, 23}, {5, 24}]
+time = 4000          scouts down = [{1, 10}, {2, 10}, {3, 10}, {4, 23}, {5, 24}]
+time = 4000        commanders up = [{1, 2506}, {2, 6}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 4000      commanders down = [{1, 2506}, {2, 6}, {3, 874}, {4, 3191}, {5, 5639}]
+
+time = 5000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 5000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 5000     total commanders = 16348
+time = 5000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 5000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 5000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 5000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 6000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 6000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 6000     total commanders = 16348
+time = 6000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 6000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 6000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 6000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 7000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 7000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 7000     total commanders = 16348
+time = 7000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 7000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 7000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 7000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 8000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 8000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 8000     total commanders = 16348
+time = 8000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 8000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 8000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 8000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 9000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 9000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 9000     total commanders = 16348
+time = 9000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 9000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 9000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 9000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 10000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 10000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 10000     total commanders = 16348
+time = 10000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 10000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 10000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 10000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 11000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 11000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 11000     total commanders = 16348
+time = 11000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 11000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 11000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 11000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+time = 12000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 12000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 12000     total commanders = 16348
+time = 12000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 12000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 12000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 12000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+  Node server1_17_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 13000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 13000     total commanders = 16348
+time = 13000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 13000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 13000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 13000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+  Node server2_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_17_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_17_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 14000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 14000     total commanders = 16348
+time = 14000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 14000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 14000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 14000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+  Node client2_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_17_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_17_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_17_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_17_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_17_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_17_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 15000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 15000     total commanders = 16348
+time = 15000            scouts up = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 15000          scouts down = [{1, 10}, {2, 11}, {3, 10}, {4, 23}, {5, 24}]
+time = 15000        commanders up = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+time = 15000      commanders down = [{1, 2506}, {2, 2506}, {3, 2506}, {4, 3191}, {5, 5639}]
+
+  Node server8_17_justine@127.0.0.1 exiting - maxtime reached
+mix compile
+--> Starting Multipaxos at multipaxos_40_justine@127.0.0.1 (146.169.195.111)
+  client_sleep 2
+  client_stop 15000
+  crash_servers %{}
+  debug_level 2
+  init_timeout 10
+  line_num 0
+  max_amount 1000
+  max_requests 500
+  max_timeout 1000
+  monitor #PID<0.145.0>
+  n_accounts 10
+  n_clients 5
+  n_servers 5
+  node_location "multipaxos_40_justine@127.0.0.1 (146.169.195.111)"
+  node_name "Multipaxos"
+  node_num ""
+  node_suffix "40_justine@127.0.0.1"
+  node_type "Multipaxos"
+  param_setup :default
+  print_after 1000
+  send_policy :round_robin
+  start_function :cluster_start
+  timelimit 15000
+  timeout_decr 2
+  timeout_mult 2
+  window_size 10
+--> Starting Server1 at server1_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_40_justine@127.0.0.1 (146.169.195.111)
+[31m--> Debug Server1: preempted by {0, 2}, my ballot: {0, 1}, timeout: 10
+[32m--> Debug Server2: preempted by {0, 3}, my ballot: {0, 2}, timeout: 10
+--> Starting Client2 at client2_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client3 at client3_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_40_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_40_justine@127.0.0.1 (146.169.195.111)
+[31m--> Debug Server1: preempted by {1, 2}, my ballot: {1, 1}, timeout: 22
+[34m--> Debug Server3: preempted by {2, 1}, my ballot: {0, 3}, timeout: 10
+[35m--> Debug Server5: preempted by {2, 1}, my ballot: {0, 5}, timeout: 10
+[36m--> Debug Server4: preempted by {2, 1}, my ballot: {0, 4}, timeout: 10
+[32m--> Debug Server2: preempted by {2, 1}, my ballot: {1, 2}, timeout: 22
+[31m--> Debug Server1: preempted by {3, 3}, my ballot: {2, 1}, timeout: 4
+[36m--> Debug Server4: preempted by {3, 5}, my ballot: {3, 4}, timeout: 22
+[34m--> Debug Server3: preempted by {4, 1}, my ballot: {3, 3}, timeout: 22
+[35m--> Debug Server5: preempted by {4, 1}, my ballot: {3, 5}, timeout: 22
+[32m--> Debug Server2: preempted by {4, 1}, my ballot: {3, 2}, timeout: 46
+[31m--> Debug Server1: preempted by {4, 4}, my ballot: {4, 1}, timeout: 0
+[36m--> Debug Server4: preempted by {5, 1}, my ballot: {4, 4}, timeout: 46
+[34m--> Debug Server3: preempted by {5, 5}, my ballot: {5, 3}, timeout: 0
+[31m--> Debug Server1: preempted by {5, 5}, my ballot: {5, 1}, timeout: 0
+[35m--> Debug Server5: preempted by {6, 3}, my ballot: {5, 5}, timeout: 0
+[31m--> Debug Server1: preempted by {6, 3}, my ballot: {6, 1}, timeout: 2
+[34m--> Debug Server3: preempted by {7, 5}, my ballot: {6, 3}, timeout: 2
+[31m--> Debug Server1: preempted by {7, 5}, my ballot: {7, 1}, timeout: 6
+[35m--> Debug Server5: preempted by {8, 3}, my ballot: {7, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {9, 5}, my ballot: {8, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {10, 3}, my ballot: {9, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {11, 5}, my ballot: {10, 3}, timeout: 0
+[31m--> Debug Server1: preempted by {11, 5}, my ballot: {8, 1}, timeout: 14
+[35m--> Debug Server5: preempted by {12, 3}, my ballot: {11, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {13, 5}, my ballot: {12, 3}, timeout: 2
+[35m--> Debug Server5: preempted by {14, 3}, my ballot: {13, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {15, 5}, my ballot: {14, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {16, 3}, my ballot: {15, 5}, timeout: 2
+[34m--> Debug Server3: preempted by {17, 5}, my ballot: {16, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {18, 3}, my ballot: {17, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {19, 5}, my ballot: {18, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {20, 3}, my ballot: {19, 5}, timeout: 2
+[32m--> Debug Server2: preempted by {17, 5}, my ballot: {5, 2}, timeout: 94
+[34m--> Debug Server3: preempted by {21, 5}, my ballot: {20, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {22, 3}, my ballot: {21, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {23, 5}, my ballot: {22, 3}, timeout: 0
+[31m--> Debug Server1: preempted by {23, 5}, my ballot: {12, 1}, timeout: 30
+[35m--> Debug Server5: preempted by {24, 3}, my ballot: {23, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {25, 5}, my ballot: {24, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {26, 3}, my ballot: {25, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {27, 5}, my ballot: {26, 3}, timeout: 2
+[35m--> Debug Server5: preempted by {28, 3}, my ballot: {27, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {29, 5}, my ballot: {28, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {30, 3}, my ballot: {29, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {31, 5}, my ballot: {30, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {32, 3}, my ballot: {31, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {32, 3}, my ballot: {6, 4}, timeout: 94
+[34m--> Debug Server3: preempted by {33, 5}, my ballot: {32, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {34, 3}, my ballot: {33, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {35, 5}, my ballot: {34, 3}, timeout: 2
+[35m--> Debug Server5: preempted by {36, 3}, my ballot: {35, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {37, 5}, my ballot: {36, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {38, 3}, my ballot: {37, 5}, timeout: 2
+[34m--> Debug Server3: preempted by {39, 5}, my ballot: {38, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {40, 3}, my ballot: {39, 5}, timeout: 6
+[31m--> Debug Server1: preempted by {40, 3}, my ballot: {24, 1}, timeout: 62
+[34m--> Debug Server3: preempted by {41, 5}, my ballot: {40, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {42, 3}, my ballot: {41, 5}, timeout: 14
+[34m--> Debug Server3: preempted by {43, 5}, my ballot: {42, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {44, 3}, my ballot: {43, 5}, timeout: 30
+[34m--> Debug Server3: preempted by {45, 5}, my ballot: {44, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {46, 3}, my ballot: {45, 5}, timeout: 62
+[31m--> Debug Server1: preempted by {46, 3}, my ballot: {41, 1}, timeout: 126
+[32m--> Debug Server2: preempted by {46, 3}, my ballot: {18, 2}, timeout: 190
+[36m--> Debug Server4: preempted by {46, 3}, my ballot: {33, 4}, timeout: 190
+[34m--> Debug Server3: preempted by {47, 5}, my ballot: {46, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {48, 3}, my ballot: {47, 5}, timeout: 126
+[31m--> Debug Server1: preempted by {48, 3}, my ballot: {47, 1}, timeout: 254
+[32m--> Debug Server2: preempted by {48, 3}, my ballot: {47, 2}, timeout: 382
+[34m--> Debug Server3: preempted by {49, 5}, my ballot: {48, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {50, 3}, my ballot: {49, 5}, timeout: 254
+[36m--> Debug Server4: preempted by {50, 3}, my ballot: {47, 4}, timeout: 382
+[31m--> Debug Server1: preempted by {50, 3}, my ballot: {49, 1}, timeout: 510
+[34m--> Debug Server3: preempted by {51, 5}, my ballot: {50, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {52, 3}, my ballot: {51, 5}, timeout: 510
+[32m--> Debug Server2: preempted by {52, 3}, my ballot: {49, 2}, timeout: 766
+[36m--> Debug Server4: preempted by {52, 3}, my ballot: {51, 4}, timeout: 766
+time = 1000 client requests seen = [{1, 267}, {2, 266}, {3, 271}, {4, 271}, {5, 270}]
+time = 1000     db requests done = [{1, 1344}, {2, 1344}, {3, 1344}, {4, 1344}, {5, 1344}]
+time = 1000     total commanders = 3408
+time = 1000            scouts up = [{1, 13}, {2, 7}, {3, 27}, {4, 7}, {5, 26}]
+time = 1000          scouts down = [{1, 13}, {2, 7}, {3, 27}, {4, 7}, {5, 26}]
+time = 1000        commanders up = [{1, 54}, {2, 6}, {3, 1407}, {4, 56}, {5, 1885}]
+time = 1000      commanders down = [{1, 54}, {2, 6}, {3, 1407}, {4, 56}, {5, 1885}]
+
+[31m--> Debug Server1: preempted by {52, 3}, my ballot: {51, 1}, timeout: 1000
+[34m--> Debug Server3: preempted by {53, 5}, my ballot: {52, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {54, 3}, my ballot: {53, 5}, timeout: 1000
+  Client 2 going to sleep, sent = 500
+[32m--> Debug Server2: preempted by {54, 3}, my ballot: {53, 2}, timeout: 1000
+  Client 1 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+[36m--> Debug Server4: preempted by {54, 3}, my ballot: {53, 4}, timeout: 1000
+  Client 4 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 2000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 2000     total commanders = 6370
+time = 2000            scouts up = [{1, 14}, {2, 8}, {3, 28}, {4, 8}, {5, 27}]
+time = 2000          scouts down = [{1, 14}, {2, 8}, {3, 28}, {4, 8}, {5, 27}]
+time = 2000        commanders up = [{1, 54}, {2, 6}, {3, 2565}, {4, 56}, {5, 3689}]
+time = 2000      commanders down = [{1, 54}, {2, 6}, {3, 2565}, {4, 56}, {5, 3689}]
+
+[31m--> Debug Server1: preempted by {54, 3}, my ballot: {53, 1}, timeout: 1000
+[32m--> Debug Server2: preempted by {55, 5}, my ballot: {55, 2}, timeout: 1000
+[36m--> Debug Server4: preempted by {55, 5}, my ballot: {55, 4}, timeout: 1000
+time = 3000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 3000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 3000     total commanders = 8769
+time = 3000            scouts up = [{1, 15}, {2, 9}, {3, 28}, {4, 9}, {5, 28}]
+time = 3000          scouts down = [{1, 15}, {2, 9}, {3, 28}, {4, 9}, {5, 28}]
+time = 3000        commanders up = [{1, 54}, {2, 6}, {3, 2565}, {4, 56}, {5, 6088}]
+time = 3000      commanders down = [{1, 54}, {2, 6}, {3, 2565}, {4, 56}, {5, 6088}]
+
+[31m--> Debug Server1: preempted by {55, 5}, my ballot: {55, 1}, timeout: 1000
+[32m--> Debug Server2: preempted by {56, 4}, my ballot: {56, 2}, timeout: 1000
+time = 4000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 4000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 4000     total commanders = 13769
+time = 4000            scouts up = [{1, 16}, {2, 10}, {3, 28}, {4, 10}, {5, 28}]
+time = 4000          scouts down = [{1, 16}, {2, 10}, {3, 28}, {4, 10}, {5, 28}]
+time = 4000        commanders up = [{1, 54}, {2, 2506}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 4000      commanders down = [{1, 54}, {2, 2506}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+[31m--> Debug Server1: preempted by {56, 4}, my ballot: {56, 1}, timeout: 1000
+time = 5000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 5000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 5000     total commanders = 16269
+time = 5000            scouts up = [{1, 17}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 5000          scouts down = [{1, 17}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 5000        commanders up = [{1, 54}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 5000      commanders down = [{1, 54}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+[31m--> Debug Server1: preempted by {57, 2}, my ballot: {57, 1}, timeout: 1000
+time = 6000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 6000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 6000     total commanders = 16269
+time = 6000            scouts up = [{1, 18}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 6000          scouts down = [{1, 18}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 6000        commanders up = [{1, 54}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 6000      commanders down = [{1, 54}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 7000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 7000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 7000     total commanders = 18719
+time = 7000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 7000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 7000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 7000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 8000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 8000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 8000     total commanders = 18719
+time = 8000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 8000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 8000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 8000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 9000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 9000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 9000     total commanders = 18719
+time = 9000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 9000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 9000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 9000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 10000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 10000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 10000     total commanders = 18719
+time = 10000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 10000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 10000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 10000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 11000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 11000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 11000     total commanders = 18719
+time = 11000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 11000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 11000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 11000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+time = 12000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 12000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 12000     total commanders = 18719
+time = 12000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 12000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 12000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 12000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+  Node server1_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_40_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 13000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 13000     total commanders = 18719
+time = 13000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 13000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 13000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 13000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+  Node server8_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_40_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_40_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_40_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 14000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 14000     total commanders = 18719
+time = 14000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 14000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 14000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 14000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+  Node client1_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_40_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_40_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_40_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_40_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_40_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 15000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 15000     total commanders = 18719
+time = 15000            scouts up = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 15000          scouts down = [{1, 19}, {2, 11}, {3, 28}, {4, 10}, {5, 28}]
+time = 15000        commanders up = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+time = 15000      commanders down = [{1, 2504}, {2, 5006}, {3, 2565}, {4, 2556}, {5, 6088}]
+
+mix compile
+--> Starting Multipaxos at multipaxos_02_justine@127.0.0.1 (146.169.195.111)
+  client_sleep 2
+  client_stop 15000
+  crash_servers %{}
+  debug_level 2
+  init_timeout 10
+  line_num 0
+  max_amount 1000
+  max_requests 500
+  max_timeout 1000
+  monitor #PID<0.145.0>
+  n_accounts 10
+  n_clients 5
+  n_servers 5
+  node_location "multipaxos_02_justine@127.0.0.1 (146.169.195.111)"
+  node_name "Multipaxos"
+  node_num ""
+  node_suffix "02_justine@127.0.0.1"
+  node_type "Multipaxos"
+  param_setup :default
+  print_after 1000
+  send_policy :round_robin
+  start_function :cluster_start
+  timelimit 15000
+  timeout_decr 2
+  timeout_mult 2
+  window_size 10
+--> Starting Server1 at server1_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_02_justine@127.0.0.1 (146.169.195.111)
+[31m--> Debug Server1: preempted by {0, 3}, my ballot: {0, 1}, timeout: 10
+[32m--> Debug Server2: preempted by {0, 3}, my ballot: {0, 2}, timeout: 10
+--> Starting Client2 at client2_02_justine@127.0.0.1 (146.169.195.111)
+[35m--> Debug Server5: preempted by {1, 2}, my ballot: {0, 5}, timeout: 10
+--> Starting Client3 at client3_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_02_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_02_justine@127.0.0.1 (146.169.195.111)
+[34m--> Debug Server3: preempted by {2, 5}, my ballot: {0, 3}, timeout: 10
+[36m--> Debug Server4: preempted by {2, 5}, my ballot: {0, 4}, timeout: 10
+[32m--> Debug Server2: preempted by {2, 5}, my ballot: {1, 2}, timeout: 22
+[31m--> Debug Server1: preempted by {2, 5}, my ballot: {1, 1}, timeout: 22
+[35m--> Debug Server5: preempted by {3, 3}, my ballot: {2, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {4, 5}, my ballot: {3, 3}, timeout: 22
+[36m--> Debug Server4: preempted by {4, 5}, my ballot: {3, 4}, timeout: 22
+[32m--> Debug Server2: preempted by {4, 5}, my ballot: {3, 2}, timeout: 46
+[31m--> Debug Server1: preempted by {4, 5}, my ballot: {3, 1}, timeout: 46
+[35m--> Debug Server5: preempted by {5, 3}, my ballot: {4, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {6, 5}, my ballot: {5, 3}, timeout: 0
+[36m--> Debug Server4: preempted by {7, 3}, my ballot: {5, 4}, timeout: 46
+[35m--> Debug Server5: preempted by {7, 3}, my ballot: {6, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {8, 5}, my ballot: {7, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {9, 3}, my ballot: {8, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {10, 5}, my ballot: {9, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {11, 3}, my ballot: {10, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {12, 5}, my ballot: {11, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {13, 3}, my ballot: {12, 5}, timeout: 2
+[34m--> Debug Server3: preempted by {14, 5}, my ballot: {13, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {15, 3}, my ballot: {14, 5}, timeout: 6
+[34m--> Debug Server3: preempted by {16, 5}, my ballot: {15, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {17, 3}, my ballot: {16, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {18, 5}, my ballot: {17, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {19, 3}, my ballot: {18, 5}, timeout: 2
+[32m--> Debug Server2: preempted by {20, 5}, my ballot: {5, 2}, timeout: 94
+[34m--> Debug Server3: preempted by {20, 5}, my ballot: {19, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {21, 3}, my ballot: {20, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {22, 5}, my ballot: {21, 3}, timeout: 2
+[31m--> Debug Server1: preempted by {22, 5}, my ballot: {5, 1}, timeout: 94
+[35m--> Debug Server5: preempted by {23, 3}, my ballot: {22, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {24, 5}, my ballot: {23, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {25, 3}, my ballot: {24, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {26, 5}, my ballot: {25, 3}, timeout: 2
+[35m--> Debug Server5: preempted by {27, 3}, my ballot: {26, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {28, 5}, my ballot: {27, 3}, timeout: 6
+[35m--> Debug Server5: preempted by {29, 3}, my ballot: {28, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {29, 3}, my ballot: {8, 4}, timeout: 94
+[34m--> Debug Server3: preempted by {30, 5}, my ballot: {29, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {31, 3}, my ballot: {30, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {32, 5}, my ballot: {31, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {33, 3}, my ballot: {32, 5}, timeout: 2
+[34m--> Debug Server3: preempted by {34, 5}, my ballot: {33, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {35, 3}, my ballot: {34, 5}, timeout: 6
+[34m--> Debug Server3: preempted by {36, 5}, my ballot: {35, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {37, 3}, my ballot: {36, 5}, timeout: 14
+[34m--> Debug Server3: preempted by {38, 5}, my ballot: {37, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {39, 3}, my ballot: {38, 5}, timeout: 30
+[34m--> Debug Server3: preempted by {40, 5}, my ballot: {39, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {41, 3}, my ballot: {40, 5}, timeout: 62
+[32m--> Debug Server2: preempted by {41, 3}, my ballot: {21, 2}, timeout: 190
+[31m--> Debug Server1: preempted by {41, 3}, my ballot: {23, 1}, timeout: 190
+[36m--> Debug Server4: preempted by {41, 3}, my ballot: {30, 4}, timeout: 190
+[34m--> Debug Server3: preempted by {42, 5}, my ballot: {41, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {43, 3}, my ballot: {42, 5}, timeout: 126
+[31m--> Debug Server1: preempted by {43, 3}, my ballot: {42, 1}, timeout: 382
+[32m--> Debug Server2: preempted by {43, 3}, my ballot: {42, 2}, timeout: 382
+[34m--> Debug Server3: preempted by {44, 5}, my ballot: {43, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {45, 3}, my ballot: {44, 5}, timeout: 254
+[36m--> Debug Server4: preempted by {45, 3}, my ballot: {42, 4}, timeout: 382
+[34m--> Debug Server3: preempted by {46, 5}, my ballot: {45, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {47, 3}, my ballot: {46, 5}, timeout: 510
+[31m--> Debug Server1: preempted by {47, 3}, my ballot: {44, 1}, timeout: 766
+[32m--> Debug Server2: preempted by {47, 3}, my ballot: {44, 2}, timeout: 766
+[36m--> Debug Server4: preempted by {47, 3}, my ballot: {46, 4}, timeout: 766
+time = 1000 client requests seen = [{1, 270}, {2, 270}, {3, 274}, {4, 273}, {5, 272}]
+time = 1000     db requests done = [{1, 1358}, {2, 1357}, {3, 1357}, {4, 1356}, {5, 1357}]
+time = 1000     total commanders = 3326
+time = 1000            scouts up = [{1, 7}, {2, 7}, {3, 24}, {4, 7}, {5, 24}]
+time = 1000          scouts down = [{1, 7}, {2, 7}, {3, 24}, {4, 7}, {5, 24}]
+time = 1000        commanders up = [{1, 6}, {2, 6}, {3, 1428}, {4, 34}, {5, 1852}]
+time = 1000      commanders down = [{1, 6}, {2, 6}, {3, 1427}, {4, 34}, {5, 1852}]
+
+[34m--> Debug Server3: preempted by {48, 5}, my ballot: {47, 3}, timeout: 0
+[35m--> Debug Server5: preempted by {49, 3}, my ballot: {48, 5}, timeout: 1000
+[31m--> Debug Server1: preempted by {49, 3}, my ballot: {48, 1}, timeout: 1000
+[32m--> Debug Server2: preempted by {49, 3}, my ballot: {48, 2}, timeout: 1000
+  Client 2 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+[36m--> Debug Server4: preempted by {49, 3}, my ballot: {48, 4}, timeout: 1000
+  Client 4 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 2000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 2000     total commanders = 6209
+time = 2000            scouts up = [{1, 8}, {2, 8}, {3, 25}, {4, 8}, {5, 25}]
+time = 2000          scouts down = [{1, 8}, {2, 8}, {3, 25}, {4, 8}, {5, 25}]
+time = 2000        commanders up = [{1, 6}, {2, 6}, {3, 2574}, {4, 34}, {5, 3589}]
+time = 2000      commanders down = [{1, 6}, {2, 6}, {3, 2574}, {4, 34}, {5, 3589}]
+
+[31m--> Debug Server1: preempted by {50, 5}, my ballot: {50, 1}, timeout: 1000
+[32m--> Debug Server2: preempted by {50, 5}, my ballot: {50, 2}, timeout: 1000
+[36m--> Debug Server4: preempted by {50, 5}, my ballot: {50, 4}, timeout: 1000
+time = 3000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 3000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 3000     total commanders = 8583
+time = 3000            scouts up = [{1, 9}, {2, 9}, {3, 25}, {4, 9}, {5, 26}]
+time = 3000          scouts down = [{1, 9}, {2, 9}, {3, 25}, {4, 9}, {5, 26}]
+time = 3000        commanders up = [{1, 6}, {2, 6}, {3, 2574}, {4, 34}, {5, 5963}]
+time = 3000      commanders down = [{1, 6}, {2, 6}, {3, 2574}, {4, 34}, {5, 5963}]
+
+[31m--> Debug Server1: preempted by {51, 2}, my ballot: {51, 1}, timeout: 1000
+[32m--> Debug Server2: preempted by {51, 4}, my ballot: {51, 2}, timeout: 362
+time = 4000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 4000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 4000     total commanders = 13583
+time = 4000            scouts up = [{1, 10}, {2, 10}, {3, 25}, {4, 10}, {5, 26}]
+time = 4000          scouts down = [{1, 10}, {2, 10}, {3, 25}, {4, 10}, {5, 26}]
+time = 4000        commanders up = [{1, 6}, {2, 2506}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 4000      commanders down = [{1, 6}, {2, 2506}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+[31m--> Debug Server1: preempted by {52, 2}, my ballot: {52, 1}, timeout: 1000
+time = 5000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 5000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 5000     total commanders = 15210
+time = 5000            scouts up = [{1, 11}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 5000          scouts down = [{1, 11}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 5000        commanders up = [{1, 6}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 5000      commanders down = [{1, 6}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 6000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 6000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 6000     total commanders = 17710
+time = 6000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 6000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 6000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 6000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 7000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 7000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 7000     total commanders = 17710
+time = 7000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 7000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 7000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 7000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 8000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 8000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 8000     total commanders = 17710
+time = 8000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 8000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 8000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 8000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 9000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 9000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 9000     total commanders = 17710
+time = 9000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 9000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 9000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 9000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 10000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 10000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 10000     total commanders = 17710
+time = 10000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 10000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 10000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 10000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 11000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 11000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 11000     total commanders = 17710
+time = 11000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 11000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 11000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 11000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+time = 12000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 12000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 12000     total commanders = 17710
+time = 12000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 12000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 12000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 12000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+  Node server3_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_02_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 13000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 13000     total commanders = 17710
+time = 13000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 13000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 13000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 13000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+  Node server2_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server8_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_02_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 14000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 14000     total commanders = 17710
+time = 14000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 14000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 14000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 14000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+  Node client5_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server1_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_02_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_02_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_02_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_02_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 15000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 15000     total commanders = 17710
+time = 15000            scouts up = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 15000          scouts down = [{1, 12}, {2, 11}, {3, 25}, {4, 10}, {5, 26}]
+time = 15000        commanders up = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+time = 15000      commanders down = [{1, 2506}, {2, 4133}, {3, 2574}, {4, 2534}, {5, 5963}]
+
+mix compile
+--> Starting Multipaxos at multipaxos_25_justine@127.0.0.1 (146.169.195.111)
+  client_sleep 2
+  client_stop 15000
+  crash_servers %{}
+  debug_level 2
+  init_timeout 10
+  line_num 0
+  max_amount 1000
+  max_requests 500
+  max_timeout 1000
+  monitor #PID<0.145.0>
+  n_accounts 10
+  n_clients 5
+  n_servers 5
+  node_location "multipaxos_25_justine@127.0.0.1 (146.169.195.111)"
+  node_name "Multipaxos"
+  node_num ""
+  node_suffix "25_justine@127.0.0.1"
+  node_type "Multipaxos"
+  param_setup :default
+  print_after 1000
+  send_policy :round_robin
+  start_function :cluster_start
+  timelimit 15000
+  timeout_decr 2
+  timeout_mult 2
+  window_size 10
+--> Starting Server1 at server1_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_25_justine@127.0.0.1 (146.169.195.111)
+[31m--> Debug Server1: preempted by {0, 3}, my ballot: {0, 1}, timeout: 10
+[34m--> Debug Server3: preempted by {0, 4}, my ballot: {0, 3}, timeout: 10
+[32m--> Debug Server2: preempted by {0, 3}, my ballot: {0, 2}, timeout: 10
+--> Starting Client2 at client2_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client3 at client3_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_25_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_25_justine@127.0.0.1 (146.169.195.111)
+[32m--> Debug Server2: preempted by {1, 3}, my ballot: {1, 2}, timeout: 22
+[36m--> Debug Server4: preempted by {2, 2}, my ballot: {0, 4}, timeout: 10
+[34m--> Debug Server3: preempted by {2, 2}, my ballot: {1, 3}, timeout: 22
+[35m--> Debug Server5: preempted by {2, 2}, my ballot: {0, 5}, timeout: 10
+[31m--> Debug Server1: preempted by {2, 2}, my ballot: {1, 1}, timeout: 22
+[32m--> Debug Server2: preempted by {3, 4}, my ballot: {2, 2}, timeout: 30
+[36m--> Debug Server4: preempted by {3, 5}, my ballot: {3, 4}, timeout: 22
+[34m--> Debug Server3: preempted by {3, 5}, my ballot: {3, 3}, timeout: 46
+[31m--> Debug Server1: preempted by {3, 5}, my ballot: {3, 1}, timeout: 46
+[32m--> Debug Server2: preempted by {4, 4}, my ballot: {4, 2}, timeout: 62
+[35m--> Debug Server5: preempted by {4, 4}, my ballot: {3, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {5, 5}, my ballot: {4, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {6, 4}, my ballot: {5, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {7, 5}, my ballot: {6, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {8, 4}, my ballot: {7, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {9, 5}, my ballot: {8, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {10, 4}, my ballot: {9, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {11, 5}, my ballot: {10, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {12, 4}, my ballot: {11, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {13, 5}, my ballot: {12, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {14, 4}, my ballot: {13, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {15, 5}, my ballot: {14, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {16, 4}, my ballot: {15, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {17, 5}, my ballot: {4, 3}, timeout: 94
+[36m--> Debug Server4: preempted by {17, 5}, my ballot: {16, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {18, 4}, my ballot: {17, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {19, 5}, my ballot: {18, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {20, 4}, my ballot: {19, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {21, 5}, my ballot: {20, 4}, timeout: 0
+[31m--> Debug Server1: preempted by {21, 5}, my ballot: {4, 1}, timeout: 94
+[35m--> Debug Server5: preempted by {22, 4}, my ballot: {21, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {23, 5}, my ballot: {22, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {24, 4}, my ballot: {23, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {25, 5}, my ballot: {24, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {26, 4}, my ballot: {25, 5}, timeout: 6
+[36m--> Debug Server4: preempted by {27, 5}, my ballot: {26, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {28, 4}, my ballot: {27, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {29, 5}, my ballot: {28, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {30, 4}, my ballot: {29, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {31, 5}, my ballot: {30, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {32, 4}, my ballot: {31, 5}, timeout: 6
+[36m--> Debug Server4: preempted by {33, 5}, my ballot: {32, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {34, 4}, my ballot: {33, 5}, timeout: 0
+[32m--> Debug Server2: preempted by {34, 4}, my ballot: {5, 2}, timeout: 126
+[36m--> Debug Server4: preempted by {35, 5}, my ballot: {34, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {36, 4}, my ballot: {35, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {37, 5}, my ballot: {36, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {38, 4}, my ballot: {37, 5}, timeout: 2
+[36m--> Debug Server4: preempted by {39, 5}, my ballot: {38, 4}, timeout: 0
+[35m--> Debug Server5: preempted by {40, 4}, my ballot: {39, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {41, 5}, my ballot: {40, 4}, timeout: 2
+[35m--> Debug Server5: preempted by {42, 4}, my ballot: {41, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {43, 5}, my ballot: {42, 4}, timeout: 6
+[35m--> Debug Server5: preempted by {44, 4}, my ballot: {43, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {45, 5}, my ballot: {44, 4}, timeout: 14
+[35m--> Debug Server5: preempted by {46, 4}, my ballot: {45, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {47, 5}, my ballot: {46, 4}, timeout: 30
+[34m--> Debug Server3: preempted by {47, 5}, my ballot: {18, 3}, timeout: 190
+[31m--> Debug Server1: preempted by {47, 5}, my ballot: {22, 1}, timeout: 190
+[35m--> Debug Server5: preempted by {48, 4}, my ballot: {47, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {49, 5}, my ballot: {48, 4}, timeout: 62
+[32m--> Debug Server2: preempted by {49, 5}, my ballot: {35, 2}, timeout: 254
+[35m--> Debug Server5: preempted by {50, 4}, my ballot: {49, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {51, 5}, my ballot: {50, 4}, timeout: 126
+[34m--> Debug Server3: preempted by {51, 5}, my ballot: {48, 3}, timeout: 382
+[31m--> Debug Server1: preempted by {51, 5}, my ballot: {48, 1}, timeout: 382
+[35m--> Debug Server5: preempted by {52, 4}, my ballot: {51, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {53, 5}, my ballot: {52, 4}, timeout: 254
+[32m--> Debug Server2: preempted by {53, 5}, my ballot: {50, 2}, timeout: 510
+[35m--> Debug Server5: preempted by {54, 4}, my ballot: {53, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {55, 5}, my ballot: {52, 3}, timeout: 766
+[36m--> Debug Server4: preempted by {55, 5}, my ballot: {54, 4}, timeout: 510
+[31m--> Debug Server1: preempted by {55, 5}, my ballot: {52, 1}, timeout: 766
+time = 1000 client requests seen = [{1, 269}, {2, 269}, {3, 272}, {4, 272}, {5, 270}]
+time = 1000     db requests done = [{1, 1351}, {2, 1351}, {3, 1351}, {4, 1350}, {5, 1351}]
+time = 1000     total commanders = 3526
+time = 1000            scouts up = [{1, 7}, {2, 7}, {3, 7}, {4, 28}, {5, 28}]
+time = 1000          scouts down = [{1, 7}, {2, 7}, {3, 7}, {4, 28}, {5, 28}]
+time = 1000        commanders up = [{1, 6}, {2, 12}, {3, 6}, {4, 2094}, {5, 1408}]
+time = 1000      commanders down = [{1, 6}, {2, 12}, {3, 6}, {4, 2094}, {5, 1408}]
+
+[32m--> Debug Server2: preempted by {55, 5}, my ballot: {54, 2}, timeout: 1000
+[35m--> Debug Server5: preempted by {56, 4}, my ballot: {55, 5}, timeout: 0
+[36m--> Debug Server4: preempted by {57, 5}, my ballot: {56, 4}, timeout: 1000
+[31m--> Debug Server1: preempted by {57, 5}, my ballot: {56, 1}, timeout: 1000
+[34m--> Debug Server3: preempted by {57, 5}, my ballot: {56, 3}, timeout: 1000
+  Client 2 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+  Client 3 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+time = 2000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 2000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 2000     total commanders = 6558
+time = 2000            scouts up = [{1, 8}, {2, 8}, {3, 8}, {4, 29}, {5, 29}]
+time = 2000          scouts down = [{1, 8}, {2, 8}, {3, 8}, {4, 29}, {5, 29}]
+time = 2000        commanders up = [{1, 6}, {2, 12}, {3, 6}, {4, 3975}, {5, 2559}]
+time = 2000      commanders down = [{1, 6}, {2, 12}, {3, 6}, {4, 3975}, {5, 2559}]
+
+[32m--> Debug Server2: preempted by {57, 5}, my ballot: {56, 2}, timeout: 1000
+[34m--> Debug Server3: preempted by {58, 4}, my ballot: {58, 3}, timeout: 1000
+[31m--> Debug Server1: preempted by {58, 4}, my ballot: {58, 1}, timeout: 1000
+time = 3000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 3000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 3000     total commanders = 8910
+time = 3000            scouts up = [{1, 9}, {2, 9}, {3, 9}, {4, 30}, {5, 29}]
+time = 3000          scouts down = [{1, 9}, {2, 9}, {3, 9}, {4, 30}, {5, 29}]
+time = 3000        commanders up = [{1, 6}, {2, 12}, {3, 6}, {4, 6327}, {5, 2559}]
+time = 3000      commanders down = [{1, 6}, {2, 12}, {3, 6}, {4, 6327}, {5, 2559}]
+
+[32m--> Debug Server2: preempted by {58, 4}, my ballot: {58, 2}, timeout: 1000
+[31m--> Debug Server1: preempted by {59, 3}, my ballot: {59, 1}, timeout: 1000
+time = 4000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 4000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 4000     total commanders = 11410
+time = 4000            scouts up = [{1, 10}, {2, 10}, {3, 10}, {4, 30}, {5, 29}]
+time = 4000          scouts down = [{1, 10}, {2, 10}, {3, 10}, {4, 30}, {5, 29}]
+time = 4000        commanders up = [{1, 6}, {2, 12}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 4000      commanders down = [{1, 6}, {2, 12}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+[32m--> Debug Server2: preempted by {59, 3}, my ballot: {59, 2}, timeout: 1000
+time = 5000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 5000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 5000     total commanders = 13910
+time = 5000            scouts up = [{1, 11}, {2, 11}, {3, 10}, {4, 30}, {5, 29}]
+time = 5000          scouts down = [{1, 11}, {2, 11}, {3, 10}, {4, 30}, {5, 29}]
+time = 5000        commanders up = [{1, 2506}, {2, 12}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 5000      commanders down = [{1, 2506}, {2, 12}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 6000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 6000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 6000     total commanders = 16402
+time = 6000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 6000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 6000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 6000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 7000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 7000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 7000     total commanders = 16402
+time = 7000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 7000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 7000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 7000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 8000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 8000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 8000     total commanders = 16402
+time = 8000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 8000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 8000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 8000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 9000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 9000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 9000     total commanders = 16402
+time = 9000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 9000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 9000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 9000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 10000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 10000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 10000     total commanders = 16402
+time = 10000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 10000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 10000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 10000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 11000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 11000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 11000     total commanders = 16402
+time = 11000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 11000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 11000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 11000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+time = 12000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 12000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 12000     total commanders = 16402
+time = 12000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 12000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 12000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 12000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+  Node server1_25_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 13000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 13000     total commanders = 16402
+time = 13000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 13000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 13000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 13000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+  Node server2_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server4_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server8_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_25_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_25_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 14000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 14000     total commanders = 16402
+time = 14000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 14000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 14000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 14000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+  Node server7_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_25_justine@127.0.0.1 exiting - maxtime reached
+  Node client2_25_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_25_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 15000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 15000     total commanders = 16402
+time = 15000            scouts up = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 15000          scouts down = [{1, 11}, {2, 12}, {3, 10}, {4, 30}, {5, 29}]
+time = 15000        commanders up = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+time = 15000      commanders down = [{1, 2506}, {2, 2504}, {3, 2506}, {4, 6327}, {5, 2559}]
+
+mix compile
+--> Starting Multipaxos at multipaxos_47_justine@127.0.0.1 (146.169.195.111)
+  client_sleep 2
+  client_stop 15000
+  crash_servers %{}
+  debug_level 2
+  init_timeout 10
+  line_num 0
+  max_amount 1000
+  max_requests 500
+  max_timeout 1000
+  monitor #PID<0.145.0>
+  n_accounts 10
+  n_clients 5
+  n_servers 5
+  node_location "multipaxos_47_justine@127.0.0.1 (146.169.195.111)"
+  node_name "Multipaxos"
+  node_num ""
+  node_suffix "47_justine@127.0.0.1"
+  node_type "Multipaxos"
+  param_setup :default
+  print_after 1000
+  send_policy :round_robin
+  start_function :cluster_start
+  timelimit 15000
+  timeout_decr 2
+  timeout_mult 2
+  window_size 10
+--> Starting Server1 at server1_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server2 at server2_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server3 at server3_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server4 at server4_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Server5 at server5_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client1 at client1_47_justine@127.0.0.1 (146.169.195.111)
+[34m--> Debug Server3: preempted by {0, 4}, my ballot: {0, 3}, timeout: 10
+[31m--> Debug Server1: preempted by {0, 4}, my ballot: {0, 1}, timeout: 10
+[32m--> Debug Server2: preempted by {0, 4}, my ballot: {0, 2}, timeout: 10
+--> Starting Client2 at client2_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client3 at client3_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client4 at client4_47_justine@127.0.0.1 (146.169.195.111)
+--> Starting Client5 at client5_47_justine@127.0.0.1 (146.169.195.111)
+[32m--> Debug Server2: preempted by {1, 3}, my ballot: {1, 2}, timeout: 22
+[31m--> Debug Server1: preempted by {1, 3}, my ballot: {1, 1}, timeout: 22
+[35m--> Debug Server5: preempted by {1, 3}, my ballot: {0, 5}, timeout: 10
+[36m--> Debug Server4: preempted by {1, 3}, my ballot: {0, 4}, timeout: 10
+[31m--> Debug Server1: preempted by {2, 2}, my ballot: {2, 1}, timeout: 46
+[34m--> Debug Server3: preempted by {2, 2}, my ballot: {1, 3}, timeout: 18
+[36m--> Debug Server4: preempted by {2, 5}, my ballot: {2, 4}, timeout: 22
+[32m--> Debug Server2: preempted by {2, 5}, my ballot: {2, 2}, timeout: 38
+[35m--> Debug Server5: preempted by {3, 3}, my ballot: {2, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {4, 5}, my ballot: {3, 3}, timeout: 38
+[36m--> Debug Server4: preempted by {4, 5}, my ballot: {3, 4}, timeout: 46
+[31m--> Debug Server1: preempted by {4, 5}, my ballot: {3, 1}, timeout: 94
+[35m--> Debug Server5: preempted by {5, 3}, my ballot: {4, 5}, timeout: 0
+[32m--> Debug Server2: preempted by {4, 5}, my ballot: {3, 2}, timeout: 78
+[34m--> Debug Server3: preempted by {6, 5}, my ballot: {5, 3}, timeout: 78
+[36m--> Debug Server4: preempted by {6, 5}, my ballot: {5, 4}, timeout: 94
+[35m--> Debug Server5: preempted by {7, 3}, my ballot: {6, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {8, 5}, my ballot: {7, 3}, timeout: 158
+[32m--> Debug Server2: preempted by {8, 5}, my ballot: {5, 2}, timeout: 158
+[31m--> Debug Server1: preempted by {8, 5}, my ballot: {5, 1}, timeout: 190
+[36m--> Debug Server4: preempted by {8, 5}, my ballot: {7, 4}, timeout: 190
+[35m--> Debug Server5: preempted by {9, 3}, my ballot: {8, 5}, timeout: 0
+[32m--> Debug Server2: preempted by {10, 5}, my ballot: {9, 2}, timeout: 318
+[34m--> Debug Server3: preempted by {10, 5}, my ballot: {9, 3}, timeout: 318
+[31m--> Debug Server1: preempted by {10, 5}, my ballot: {9, 1}, timeout: 382
+[36m--> Debug Server4: preempted by {10, 5}, my ballot: {9, 4}, timeout: 382
+[35m--> Debug Server5: preempted by {11, 2}, my ballot: {10, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {12, 5}, my ballot: {11, 3}, timeout: 638
+[32m--> Debug Server2: preempted by {12, 5}, my ballot: {11, 2}, timeout: 638
+[31m--> Debug Server1: preempted by {12, 5}, my ballot: {11, 1}, timeout: 766
+[36m--> Debug Server4: preempted by {12, 5}, my ballot: {11, 4}, timeout: 766
+time = 1000 client requests seen = [{1, 250}, {2, 249}, {3, 254}, {4, 252}, {5, 251}]
+time = 1000     db requests done = [{1, 1254}, {2, 1254}, {3, 1254}, {4, 1254}, {5, 1254}]
+time = 1000     total commanders = 2709
+time = 1000            scouts up = [{1, 7}, {2, 7}, {3, 7}, {4, 7}, {5, 7}]
+time = 1000          scouts down = [{1, 7}, {2, 7}, {3, 7}, {4, 7}, {5, 7}]
+time = 1000        commanders up = [{2, 915}, {3, 531}, {4, 2}, {5, 1261}]
+time = 1000      commanders down = [{2, 915}, {3, 531}, {4, 2}, {5, 1261}]
+
+[35m--> Debug Server5: preempted by {13, 3}, my ballot: {12, 5}, timeout: 0
+[34m--> Debug Server3: preempted by {14, 5}, my ballot: {13, 3}, timeout: 1000
+[32m--> Debug Server2: preempted by {14, 5}, my ballot: {13, 2}, timeout: 1000
+  Client 3 going to sleep, sent = 500
+[31m--> Debug Server1: preempted by {14, 5}, my ballot: {13, 1}, timeout: 1000
+  Client 2 going to sleep, sent = 500
+  Client 1 going to sleep, sent = 500
+  Client 4 going to sleep, sent = 500
+  Client 5 going to sleep, sent = 500
+[36m--> Debug Server4: preempted by {14, 5}, my ballot: {13, 4}, timeout: 1000
+time = 2000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 2000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 2000     total commanders = 5940
+time = 2000            scouts up = [{1, 8}, {2, 8}, {3, 8}, {4, 8}, {5, 8}]
+time = 2000          scouts down = [{1, 8}, {2, 8}, {3, 8}, {4, 8}, {5, 8}]
+time = 2000        commanders up = [{2, 915}, {3, 2510}, {4, 2}, {5, 2513}]
+time = 2000      commanders down = [{2, 915}, {3, 2510}, {4, 2}, {5, 2513}]
+
+[32m--> Debug Server2: preempted by {15, 3}, my ballot: {15, 2}, timeout: 1000
+[31m--> Debug Server1: preempted by {15, 3}, my ballot: {15, 1}, timeout: 1000
+time = 3000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 3000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 3000     total commanders = 10938
+time = 3000            scouts up = [{1, 9}, {2, 9}, {3, 9}, {4, 9}, {5, 8}]
+time = 3000          scouts down = [{1, 9}, {2, 9}, {3, 9}, {4, 9}, {5, 8}]
+time = 3000        commanders up = [{2, 915}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 3000      commanders down = [{2, 915}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+[31m--> Debug Server1: preempted by {16, 2}, my ballot: {16, 1}, timeout: 1000
+time = 4000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 4000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 4000     total commanders = 13434
+time = 4000            scouts up = [{1, 10}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 4000          scouts down = [{1, 10}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 4000        commanders up = [{2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 4000      commanders down = [{2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 5000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 5000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 5000     total commanders = 15934
+time = 5000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 5000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 5000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 5000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 6000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 6000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 6000     total commanders = 15934
+time = 6000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 6000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 6000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 6000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 7000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 7000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 7000     total commanders = 15934
+time = 7000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 7000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 7000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 7000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 8000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 8000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 8000     total commanders = 15934
+time = 8000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 8000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 8000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 8000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 9000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 9000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 9000     total commanders = 15934
+time = 9000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 9000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 9000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 9000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 10000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 10000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 10000     total commanders = 15934
+time = 10000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 10000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 10000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 10000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 11000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 11000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 11000     total commanders = 15934
+time = 11000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 11000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 11000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 11000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+time = 12000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 12000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 12000     total commanders = 15934
+time = 12000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 12000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 12000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 12000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+  Node server1_47_justine@127.0.0.1 exiting - maxtime reached
+time = 13000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 13000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 13000     total commanders = 15934
+time = 13000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 13000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 13000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 13000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+  Node server4_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server8_47_justine@127.0.0.1 exiting - maxtime reached
+  Node client1_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server9_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server10_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server5_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server3_47_justine@127.0.0.1 exiting - maxtime reached
+  Node client4_47_justine@127.0.0.1 exiting - maxtime reached
+  Node client3_47_justine@127.0.0.1 exiting - maxtime reached
+time = 14000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 14000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 14000     total commanders = 15934
+time = 14000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 14000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 14000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 14000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
+  Node client2_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server6_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server7_47_justine@127.0.0.1 exiting - maxtime reached
+  Node client5_47_justine@127.0.0.1 exiting - maxtime reached
+  Node server2_47_justine@127.0.0.1 exiting - maxtime reached
+  Node multipaxos_47_justine@127.0.0.1 exiting - maxtime reached
+time = 15000 client requests seen = [{1, 500}, {2, 500}, {3, 500}, {4, 500}, {5, 500}]
+time = 15000     db requests done = [{1, 2500}, {2, 2500}, {3, 2500}, {4, 2500}, {5, 2500}]
+time = 15000     total commanders = 15934
+time = 15000            scouts up = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 15000          scouts down = [{1, 11}, {2, 10}, {3, 9}, {4, 9}, {5, 8}]
+time = 15000        commanders up = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+time = 15000      commanders down = [{1, 2500}, {2, 3411}, {3, 5008}, {4, 2502}, {5, 2513}]
+
